@@ -20,20 +20,18 @@ public class MergeFiles  {
 			
 			BufferedWriter  bw1 = new BufferedWriter(new FileWriter(file3)) ;
 			
-//			System.out.println(bf1.readLine());
-			bw1.write("msdhafkjh");
-//			String line;
-//			
-//			while((line = bf1.readLine())!=null) {
-//				bw1.write(line);
-//				bw1.newLine();
-//			}
-//			
-//			while((line = bf2.readLine())!=null) {
-//				bw1.write(line);
-//				bw1.newLine();
-//			}
-//			
+			String line;
+			
+			while((line = bf1.readLine())!=null) {
+				bw1.write(line);
+				bw1.newLine();
+			}
+			
+			while((line = bf2.readLine())!=null) {
+				bw1.write(line);
+				bw1.newLine();
+			}
+			
 			bf1.close();
 			bf2.close();
 			bw1.close();
