@@ -1,15 +1,41 @@
 package com.day5.training.files;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class MergeFiles  {
-	public static void main(String[] args) throws IOException {
-		Path path = Paths.get("C:\\Users\\ayadav\\eclipse-workspace\\training\\src\\com\\day5\\training\\files\\res\\data.txt");
+	public static void main(String[] args) throws IOException  {
 		
-		Files.lines(path).forEach(System.out::println);
 		
+			File file1 = new File("t1.txt");
+			File file2 = new File("t2.txt");
+			File file3 = new File("t3.txt");
+			
+			BufferedReader  bf1 = new BufferedReader(new FileReader(file1)) ;
+			BufferedReader  bf2 = new BufferedReader(new FileReader(file2)) ;
+			
+			BufferedWriter  bw1 = new BufferedWriter(new FileWriter(file3)) ;
+			
+//			System.out.println(bf1.readLine());
+			bw1.write("msdhafkjh");
+//			String line;
+//			
+//			while((line = bf1.readLine())!=null) {
+//				bw1.write(line);
+//				bw1.newLine();
+//			}
+//			
+//			while((line = bf2.readLine())!=null) {
+//				bw1.write(line);
+//				bw1.newLine();
+//			}
+//			
+			bf1.close();
+			bf2.close();
+			bw1.close();
 	}
 }
