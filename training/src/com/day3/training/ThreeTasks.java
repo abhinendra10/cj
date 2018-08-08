@@ -54,7 +54,6 @@ class Factorial implements Runnable{
 			}
 			System.out.println(i + " factorial is: " + fact);
 		}
-		new Factorial().notifyAll();
 	}
 	
 }

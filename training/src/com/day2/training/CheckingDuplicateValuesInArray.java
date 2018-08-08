@@ -24,6 +24,10 @@ public class CheckingDuplicateValuesInArray {
 				System.out.println(numArray[i] + " is repeated.");
 				flag = 0;
 			}
+			
+		}
+		if(flag==0) {
+				System.out.println("Nothing is repeated");
 		}
 		
 	}

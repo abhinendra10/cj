@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class RemoveElement {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the size of Array");
 		int sizeOfArray = scan.nextInt();
 		int[] array = new int[sizeOfArray];
 		int[] finalArray = new int[sizeOfArray-1];
